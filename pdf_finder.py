@@ -1,11 +1,13 @@
+import os
+import json 
 import asyncio
 import aiohttp
-import json
-import os
-from datetime import datetime
 import requests
-from urllib.parse import quote_plus
+import numpy as np
+from datetime import datetime
 from bs4 import BeautifulSoup
+from pydantic import BaseModel
+from urllib.parse import quote_plus
 from crawl4ai import (
     AsyncWebCrawler,
     CrawlerRunConfig,
@@ -13,11 +15,8 @@ from crawl4ai import (
     JsonCssExtractionStrategy,
     BrowserConfig
 )
-
-from pydantic import BaseModel
 from typing import List, Dict, Optional, Any
 from sentence_transformers import SentenceTransformer, util
-import numpy as np
 
 
 
