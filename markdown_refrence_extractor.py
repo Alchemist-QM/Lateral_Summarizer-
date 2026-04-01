@@ -1,6 +1,5 @@
-import re, json
+import re,json
 import pdfx
-import re
 from datetime import datetime
 
 
