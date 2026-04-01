@@ -1,6 +1,6 @@
+import tiktoken
 from typing import List, Union
 from langchain.schema import Document
-import tiktoken
 from hybrid_splitter import HybridSplitter
 
 class TokenSplitter:
