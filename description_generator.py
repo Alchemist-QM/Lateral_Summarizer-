@@ -1,13 +1,12 @@
-
-from typing import List
-from langchain_openai import ChatOpenAI
-from langchain_core.prompts import PromptTemplate
 import os
+from typing import List
 from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
 from token_batching import TokenSplitter
+from langchain_core.prompts import PromptTemplate
 
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY_4")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 def clean_query(query: str) -> str:
