@@ -1,6 +1,7 @@
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from typing import List, Callable
 from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
 
 
 class HybridSplitter:
